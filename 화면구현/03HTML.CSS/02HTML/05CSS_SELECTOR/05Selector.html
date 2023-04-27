@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .d1{}
-        .d1>input[type="checkbox"]{
+        .d1 {}
+
+        .d1>input[type="checkbox"] {
             display: none;
         }
-        .d1>label{
+
+        .d1>label {
             display: block;
             width: 45px;
             height: 45px;
@@ -18,44 +21,86 @@
             background-image: url("./image/toggle_on.svg");
             background-size: 100%;
         }
-        .d1>input[type="checkbox"]:checked+label{
+
+        .d1>input[type="checkbox"]:checked+label {
             background-image: url("./image/toggle_off.svg");
         }
-        .d2{}
-        .d2>input[type="radio"]{
+
+        .d2 {}
+
+        .d2>input[type="radio"] {
             display: none;
         }
-        .d2>label{
+
+        .d2>label {
             display: inline-block;
             width: 45px;
             height: 45px;
             border: 1px solid lightgray;
             border-radius: 50%;
-            
+
         }
-        #r1:checked+label{
+
+        #r1:checked+label {
             background-image: url('./image/male.svg');
             background-size: 100%;
         }
-        #r2:checked+label{
+
+        #r2:checked+label {
             background-image: url('./image/female.svg');
+            background-size: 100%;
+        }
+
+        .d3{}
+
+        .d3>input[type="checkbox"]{
+            display: none;
+        }
+        .d3>label{
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            border: 1px dotted black;
+            border-radius: 50%;
+        }
+        .d3>input[type="checkbox"]#climing:checked+label{
+            background-image: url('./image/hiking.svg');
+            background-size: 100%;
+        }
+        .d3>input[type="checkbox"]#swiming:checked+label{
+            background-image: url('./image/pool.svg');
+            background-size: 100%;
+        }
+        .d3>input[type="checkbox"]#reading:checked+label{
+            background-image: url('./image/menu.svg');
+            background-size: 100%;
+        }
+        .d3>input[type="checkbox"]#running:checked+label{
+            background-image: url('./image/sprint.svg');
             background-size: 100%;
         }
     </style>
 </head>
+
 <body>
     <div class="d1">
         <input type="checkbox" id="chk1"><label for="chk1"></label>
     </div>
     <div class="d2">
-        <input type="radio" name="gender" value="male" id="r1">   <label for="r1"></label>
-        <input type="radio" name="gender" value="female" id="r2">   <label for="r2"></label>
+        <input type="radio" name="gender" value="male" id="r1"> <label for="r1"></label>
+        <input type="radio" name="gender" value="female" id="r2"> <label for="r2"></label>
     </div>
+    <hr>
 
     <!-- 취미 각각에 맞는 이미지를 찾아서 label의 백그라운드로 하기 -->
-    <input type="checkbox" id="climing"><label for=""></label> <span>등산</span>
-    <input type="checkbox" id="swiming"><label for=""></label> <span>수영</span>
-    <input type="checkbox" id="reading"><label for=""></label> <span>독서</span>
-    <input type="checkbox" id="running"><label for=""></label> <span>런닝</span>
+    <div class="d3">
+        <input type="checkbox" id="climing"><label for="climing"></label> <span>등산</span>
+        <input type="checkbox" id="swiming"><label for="swiming"></label> <span>수영</span>
+        <input type="checkbox" id="reading"><label for="reading"></label> <span>독서</span>
+        <input type="checkbox" id="running"><label for="running"></label> <span>런닝</span>
+        
+    </div>
+
 </body>
+
 </html>
