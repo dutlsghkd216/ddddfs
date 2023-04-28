@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{margin: 0px;}
-        ul{
+        body {
+            margin: 0px;
+        }
+
+        ul {
             list-style: none;
             padding: 0;
         }
-        header{
+
+        header {
             height: 90px;
             /* line-height: 90px; */
             /* border: 1px solid gray; */
@@ -21,47 +26,54 @@
             position: relative;
             padding: 0 100px;
         }
-        header>.header--logo{
-            
+
+        header>.header--logo {
+
             width: 90px;
             /* height: 55px; */
             display: flex;
             align-items: center;
         }
-        header>.header--logo>img{
+
+        header>.header--logo>img {
             margin-top: 15px;
             width: 90px;
             height: 55px;
-            
+
         }
+
         /* 헤더 gnb */
-        header>.gnb{
+        header>.gnb {
             /* border: 1px solid red; */
             width: 1200px;
 
         }
-        header>.gnb>.one--depth{
+
+        header>.gnb>.one--depth {
             width: 100%;
             display: flex;
             justify-content: right;
             margin: 0px;
-            
+
         }
-        header>.gnb>.one--depth>li{
+
+        header>.gnb>.one--depth>li {
             width: 120px;
             height: 90px;
-            
-            /* border: 1px solid gray; */
+
+            border: 1px solid gray;
             text-align: center;
             position: relative;
-            
+
         }
-        header>.gnb>.one--depth>li>a{
+
+        header>.gnb>.one--depth>li>a {
             display: block;
             line-height: 90px;
-            
+
         }
-        header>.gnb>.one--depth>li>.two--depth{
+
+        header>.gnb>.one--depth>li>.two--depth {
             /* border: 1px solid gray; */
             position: absolute;
             top: 90px;
@@ -69,31 +81,36 @@
             width: 100%;
             display: none;
         }
-        header>.gnb>.one--depth>li>a>.two--depth>li{
+
+        header>.gnb>.one--depth>li>a>.two--depth>li {
             height: 50px;
-            
+
         }
-        header>.gnb>.one--depth>li>.two--depth>li::before{
+
+        header>.gnb>.one--depth>li>.two--depth>li::before {
             content: '🌠';
             position: relative;
             top: 0px;
 
-            
-            
+
+
         }
-        header>.gnb>.one--depth>li>a>.two--depth>li>a{}
-        header>.gnb>.one--depth>li:hover .two--depth{
+
+        header>.gnb>.one--depth>li>a>.two--depth>li>a {}
+
+        header>.gnb>.one--depth>li:hover .two--depth {
             display: block;
         }
-        header>.gnb--link{}
 
+        header>.gnb--link {}
     </style>
 </head>
+
 <body>
     <header>
         <div class="header--logo">
             <img src="http://www.mjvisiontech.com/theme/mj/img/common/logo.svg" alt="">
-            </div>
+        </div>
         <nav class="gnb">
             <ul class="one--depth">
                 <li>
@@ -133,8 +150,9 @@
                     </ul>
                 </li>
             </ul>
-            </nav>
+        </nav>
         <div class="gnb--link">GNB-link</div>
     </header>
 </body>
+
 </html>

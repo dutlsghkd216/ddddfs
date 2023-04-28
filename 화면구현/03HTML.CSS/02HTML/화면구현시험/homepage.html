@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header {
+            height: 80px;
+            /* line-height: 90px; */
+            /* border: 1px solid gray; */
+            border-bottom: 1px solid lightgray;
+            display: flex;
+            /* justify-content: space-between; */
+            position: relative;
+            padding: 0 100px;
+            /* border: 1px solid black; */
+            align-items: center;
+        }
+
+        header>.header--logo {}
+
+        header>.navv {
+            width: 500px;
+        
+        }
+
+        header>.navv>.one--depth {
+           
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin: 0px;
+            
+        }
+        header>.navv>.one--depth>li{
+            width: 120px;
+            height: 90px;
+            /* border: 1px solid gray; */
+            text-align: center;
+            position: relative;
+            margin-left: 20px;
+
+        }
+
+        header>.navv>.one--depth>li>a{
+            display: block;
+            line-height: 90px;
+            text-decoration: none;
+            color: black;
+        }
+
+        header>.header--logo>img {
+
+            /* border: 1px solid black; */
+            width: 214px;
+            height: 58px;
+            display: flex;
+
+        }
+
+        header>.navv>.one--depth>li>.two--depth{
+            border: 1px solid black;
+            display: none;
+        }
+        header>.navv>.one--depth>li:hover .two--depth{
+            display: block;
+        }
+        .search{
+            position: absolute;
+            height: 48px;
+            width: 340px;
+            /* border: 1px solid gray; */
+            background-color: rgb(235, 234, 234);
+            border-radius: 20px;
+            right: 300px;
+        }
+        .search>input{
+            position: absolute;
+            height: 40px;
+            width: 190px;
+            border: 0;
+            outline: 0;
+            font-size:30px;
+            padding-left: 32px;
+            background-color: rgb(235, 234, 234);;
+            border-radius: 20px;
+        }
+        .search>img{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            right: 10px;
+            
+        }
+        .search>input:focus+img{
+            display: none;
+        }
+        .log_btn{
+            border: 1px solid green;
+            
+            
+        }
+        .log_btn>a{
+            text-decoration: none;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header--logo">
+            <img src="./img/로고.png" alt="">
+
+        </div>
+        <nav class="navv">
+            <ul class="one--depth">
+                <li>
+                    <a href="">적성도 검사</a>
+                </li>
+                <li>
+                    <a href="">나의 강의</a>
+                </li>
+                <li>
+                    <a href="">강의목록 ∨</a>
+                    <!-- 밑에 화살표 없어질 것 -->
+                    <ul class="two--depth">
+                        <li>ALL</li><br>
+                        <li>웹개발</li><br>
+                        <li>프론트엔드</li><br>
+                        <li>백엔드</li><br>
+                        <li>풀스택</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="search box">
+            <input type="search">
+            <img src="./img/search_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+        </div>
+        <div class="log_btn">
+            <button type="button" ><a href="">로그인</a></button>
+        </div>
+        <div class="sign_btn">
+            <button type="button" class="btn btn-outline-primary"><a href="">회원가입</a></button>
+        </div>
+
+    </header>
+    <section>
+        <img src="" alt="">
+    </section>
+    <section></section>
+    <section></section>
+    <FOoter></FOoter>
+
+
+</body>
+
+</html>
