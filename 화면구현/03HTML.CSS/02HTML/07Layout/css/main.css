@@ -1,0 +1,73 @@
+/* 메인 */
+.wrapper>main {
+    border: 1px solid gray;
+    /* height: 600px; */
+}
+
+.wrapper>main>section {
+    border: 1px solid gray;
+}
+
+.wrapper>main>section:nth-child(1) {
+    height: 400px;
+    display: flex;
+}
+
+.wrapper>main>section:nth-child(1)>aside {
+    border: 1px solid gray;
+    width: 300px;
+}
+
+.wrapper>main>section:nth-child(1)>article {
+    border: 1px solid gray;
+    flex-grow: 1;
+}
+
+.wrapper>main>section:nth-child(2) {
+    height: 500px;
+    display: flex;
+}
+
+.wrapper>main>section:nth-child(2)>aside {
+    border: 1px solid gray;
+    flex-grow: 1;
+    background-color: black;
+}
+
+.wrapper>main>section:nth-child(2)>article {
+    border: 1px solid gray;
+    flex-grow: 4;
+    background-color: palevioletred;
+}
+
+.wrapper>main>section:nth-child(3) {
+    height: 400px;
+    /* display: flex; */
+
+
+}
+.wrapper>main>section:nth-child(3)>div{
+    display: flex;
+    height: 290px;
+    align-items: center;
+    
+}
+
+.wrapper>main>section:nth-child(3)>article {
+    border: 1px solid gray;
+    /* width: 100%; */
+    height: 50px;
+    
+
+}
+.wrapper>main>section:nth-child(3)>div>aside {
+    border: 1px solid gray;
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.wrapper>main>section:nth-child(3)>div>article {
+    border: 1px solid gray;
+    flex-grow: 3;
+    align-self: stretch;
+}
